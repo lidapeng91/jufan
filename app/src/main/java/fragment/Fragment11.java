@@ -2,7 +2,6 @@ package fragment;
 
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -26,9 +25,9 @@ public class Fragment11 extends Fragment{
     private ArrayList<Fragment> list;
     private ArrayList<String> list1;
 
-    @Nullable
+
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,  Bundle savedInstanceState) {
         View v=inflater.inflate(R.layout.frag11,container,false);
         tab_FindFragment_title=(TabLayout)v.findViewById(R.id.tab_FindFragment_title);
         viewPager = (ViewPager) v.findViewById(R.id.viewpager);
@@ -36,7 +35,7 @@ public class Fragment11 extends Fragment{
     }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated( Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         data();
         shipeiqi();

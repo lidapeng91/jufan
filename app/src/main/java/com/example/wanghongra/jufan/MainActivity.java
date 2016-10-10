@@ -31,7 +31,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
     * 找控件
     * */
     public void findID() {
-        //buju=(LinearLayout)findViewById(R.id.buju);
+
         linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
         linearLayout.getBackground().setAlpha(130);
         but1 = (ToggleButton) findViewById(R.id.but1);
